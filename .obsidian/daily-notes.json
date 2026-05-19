@@ -1,0 +1,6 @@
+{
+  "folder": "dialogues",
+  "template": "templates/daily-note.md",
+  "format": "YYYY-MM-DD",
+  "autorun": false
+}

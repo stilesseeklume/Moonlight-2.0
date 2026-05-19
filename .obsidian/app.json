@@ -1,0 +1,8 @@
+{
+  "enabledSnippets": [
+    "dashboard"
+  ],
+  "promptDelete": false,
+  "defaultViewMode": "preview",
+  "alwaysUpdateLinks": true
+}

@@ -1,0 +1,184 @@
+/* 月光指挥中心 v3 — Minimal Theme 兼容 */
+
+/* === 月光小纸条 === */
+.moonlight-note {
+  background: #fef9e7;
+  border-left: 4px solid #f0b429;
+  padding: 10px 14px;
+  border-radius: 0 8px 8px 0;
+  margin-bottom: 12px;
+  color: #8b6914;
+  font-size: 0.92em;
+}
+
+/* === 顶部链接栏 === */
+.dashboard-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 8px 12px;
+  background: var(--background-secondary);
+  border-radius: 8px;
+  margin-bottom: 12px;
+  font-size: 0.85em;
+}
+
+/* === 进度条 === */
+progress {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 14px;
+  border-radius: 7px;
+  overflow: hidden;
+  margin: 4px 0;
+}
+progress::-webkit-progress-bar {
+  background: var(--background-secondary);
+  border-radius: 7px;
+}
+progress::-webkit-progress-value {
+  background: var(--interactive-accent);
+  border-radius: 7px;
+  transition: width 0.5s ease;
+}
+progress.dragon-bar::-webkit-progress-value {
+  background: linear-gradient(90deg, #ef4444, #f59e0b, #22c55e);
+}
+progress.you-bar::-webkit-progress-value {
+  background: #3b82f6;
+}
+progress.enemy-bar::-webkit-progress-value {
+  background: #9ca3af;
+}
+
+/* === 屠龙 === */
+.dragon-box {
+  background: var(--background-secondary);
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin: 10px 0;
+  text-align: center;
+}
+.dragon-emoji {
+  font-size: 2.2em;
+  display: block;
+  line-height: 1.3;
+}
+.dragon-speech {
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+/* === 对战 === */
+.battle-row {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+  align-items: center;
+}
+.battle-card {
+  flex: 1;
+  background: var(--background-secondary);
+  border-radius: 10px;
+  padding: 10px 14px;
+  text-align: center;
+}
+.battle-vs {
+  font-weight: 900;
+  font-size: 1.1em;
+  color: var(--text-muted);
+  flex: 0 0 auto;
+}
+
+/* === 成就墙 === */
+.achievement-wall {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+.achievement-badge {
+  padding: 3px 10px;
+  border-radius: 16px;
+  font-size: 0.78em;
+  background: var(--background-secondary);
+  opacity: 0.35;
+  transition: opacity 0.3s;
+}
+.achievement-badge.unlocked {
+  opacity: 1;
+  background: #fef3c7;
+  border: 1px solid #f0b429;
+  color: #8b6914;
+}
+
+/* === 数据卡片 === */
+.data-card {
+  background: var(--background-secondary);
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+}
+
+/* === 表格 === */
+.data-card table {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+.data-card th,
+.data-card td {
+  text-align: center;
+  padding: 2px 0;
+  font-size: 0.9em;
+}
+
+/* === 指标数字 === */
+.metric-big {
+  font-size: 1.5em;
+  font-weight: 800;
+}
+
+/* === 画廊卡片 === */
+.gallery-grid {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+  margin-top: 12px !important;
+}
+.gallery-card {
+  flex: 0 0 140px !important;
+  width: 140px !important;
+  min-width: 140px !important;
+  max-width: 140px !important;
+  background: var(--background-secondary) !important;
+  border-radius: 12px !important;
+  padding: 14px !important;
+  border: 1px solid var(--lines, var(--background-modifier-border)) !important;
+  cursor: pointer !important;
+  text-align: center !important;
+  box-sizing: border-box !important;
+}
+.gallery-card .gallery-icon {
+  font-size: 2em;
+  margin-bottom: 6px;
+}
+.gallery-card .gallery-title {
+  font-weight: 600;
+  font-size: 0.85em;
+  margin-bottom: 2px;
+}
+.gallery-card .gallery-desc {
+  font-size: 0.7em;
+  color: var(--text-muted);
+  line-height: 1.3;
+}
+
+/* === 紧凑间距 === */
+.dashboard-card h2, .dashboard-card h3 {
+  margin: 0 0 4px 0;
+}
+.dashboard-card p {
+  margin: 4px 0;
+}

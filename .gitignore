@@ -1,0 +1,47 @@
+# === 系统文件 ===
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+
+# === Obsidian ===
+.obsidian/workspace.json
+.obsidian/plugins/
+.obsidian/.rest-api-key
+
+# === 密钥 & Token（绝对不能上传） ===
+.mcp.json
+.claude/scripts/inner-monologue/.env
+.claude/settings.local.json
+.claude/memory-graph.json
+
+# === 个人隐私数据（绝对不能上传） ===
+moonlight/
+profile.md
+Moonlight.md
+.claude/brief/context.md
+
+# === 日志 & 缓存 ===
+.claude/logs/
+.claude/cache/
+
+# === ML 模型（大文件，不跟踪） ===
+.claude/scripts/memory/.models/
+
+# === 自动生成文件 ===
+*.bak
+*.bak-*
+.claude/scripts/checkup/latest.json
+.claude/scripts/brief/today.json
+.claude/scripts/memory/index.db
+*.db-journal
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# === Claude worktrees（临时分支工作目录） ===
+.claude/worktrees/
